@@ -78,7 +78,7 @@ ul.lang-sec {
   gap: 10px;
 }
 .fav-icons {
-  width: 20%;
+  width: 15%;
 }
 ul.icons-fl {
   width: 100%;
@@ -126,4 +126,65 @@ li.items:nth-child(4) i {
 .icons figure i {
   color: #fff;
   font-size: 16px;
+}
+.carousel {
+  max-width: 1170px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+.slide figure {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+}
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  font-size: 18px;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-weight: bolder;
+  left: 20px;
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  font-size: 18px;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-weight: bolder;
+  right: 20px;
 }
